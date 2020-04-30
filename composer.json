@@ -8,7 +8,7 @@
         "plugin",
         "phpbb",
         "extension",
-        "style"
+        "language"
     ],
     "license": "GPLv2",
     "authors": [
