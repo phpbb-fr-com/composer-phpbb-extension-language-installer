@@ -2,7 +2,7 @@
     "name": "phpbbfr/phpbb-extension-language-installer",
     "type": "composer-plugin",
     "description": "A composer plugin, to install phpbb-extension-language composer packages in ext/{vendor-name/extension-name}/language/{iso_code} directory instead of the default composer installation path which is in the vendor folder",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "keywords": [
         "composer",
         "plugin",
@@ -19,15 +19,15 @@
         {
             "name": "phpBB-fr.com website team",
             "email": "site@phpbb-fr.com",
-            "homepage": "http://www.phpbb-fr.com/go/website-team"
+            "homepage": "https://www.phpbb-fr.com/go/website-team"
         }
     ],
     "require": {
-        "php": ">=5.3",
-        "composer-plugin-api": "*"
+        "php": ">=7.2",
+        "composer-plugin-api": "^2.0"
     },
     "require-dev": {
-        "composer/composer": "~1.10"
+        "composer/composer": "^2.0"
     },
     "autoload": {
         "psr-0": {
