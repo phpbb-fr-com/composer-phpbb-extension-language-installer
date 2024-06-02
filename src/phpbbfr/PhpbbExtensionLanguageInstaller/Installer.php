@@ -17,8 +17,8 @@ class Installer extends LibraryInstaller
             throw new \InvalidArgumentException('Invalid phpbb-extension-language composer package.');
         }
 
-        $extension = isset($extra['phpbb-extension']) ? $extra['phpbb-extension'] : $matches[1] . '/' . $matches[2] ;
-        $style = isset($extra['phpbb-language']) ? $extra['phpbb-language'] : $matches[3];
+        $extension = $extra['phpbb-extension'] ?? ($matches[1] . '/' . $matches[2]);
+        $style = $extra['phpbb-language'] ?? $matches[3];
 
         return sprintf('ext/%s/language/%s', $extension, $style);
     }
