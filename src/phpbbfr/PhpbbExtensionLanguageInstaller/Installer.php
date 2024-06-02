@@ -18,9 +18,9 @@ class Installer extends LibraryInstaller
         }
 
         $extension = $extra['phpbb-extension'] ?? ($matches[1] . '/' . $matches[2]);
-        $style = $extra['phpbb-language'] ?? $matches[3];
+        $lang = $extra['phpbb-language'] ?? $matches[3];
 
-        return sprintf('ext/%s/language/%s', $extension, $style);
+        return sprintf('ext/%s/language/%s', $extension, $lang);
     }
 
     public function supports($packageType)
