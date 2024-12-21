@@ -2,7 +2,7 @@
     "name": "phpbbfr/phpbb-extension-language-installer",
     "type": "composer-plugin",
     "description": "A composer plugin, to install phpbb-extension-language composer packages in ext/{vendor-name/extension-name}/language/{iso_code} directory instead of the default composer installation path which is in the vendor folder",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "keywords": [
         "composer",
         "plugin",
